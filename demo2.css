@@ -89,6 +89,7 @@ body {
     position: fixed;
     top: 32px;
     right: 32px;
+<<<<<<< Updated upstream
 }
 
 .btn {
@@ -96,4 +97,25 @@ body {
         margin-left: 56px;
     }  
     display: inline-flex;     
+=======
+    animation: slideInLeft ease .3s, fadeOut linear 2s forwards;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(calc(100% + 32px));
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+>>>>>>> Stashed changes
 }
